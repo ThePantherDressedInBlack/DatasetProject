@@ -48,7 +48,8 @@ async function fetchRecipes(ingredient) {
 
         // Switch to results screen
         showScreen(resultsScreen);
-    } catch (error) {
+    }
+    catch (error) {
         console.error('Error fetching recipes:', error);
         recipesContainer.innerHTML = '<p>Error fetching recipes.</p>';
     }
@@ -72,7 +73,8 @@ async function fetchRecipeDetails(recipeId) {
 
         // Switch to recipe detail screen
         showScreen(recipeDetailScreen);
-    } catch (error) {
+    }
+    catch (error) {
         console.error('Error fetching recipe details:', error);
         recipeDetails.innerHTML = '<p>Error fetching recipe details.</p>';
     }
@@ -83,7 +85,8 @@ searchBtn.addEventListener('click', () => {
     const ingredient = ingredientInput.value.trim();
     if (ingredient) {
         fetchRecipes(ingredient);
-    } else {
+    }
+    else {
         alert('Please enter an ingredient.');
     }
 });
