@@ -1,6 +1,5 @@
 const apiKey = 'c0cc84ab916e457e87066396b03a8777';
 
-// Getting the elements by their ID
 const searchButton = document.getElementById('searchBtn');
 const ingredientInputField = document.getElementById('ingredient');
 const recipesList = document.getElementById('recipes');
@@ -29,7 +28,8 @@ async function getRecipesFromAPI(ingredient) {
         const data = await response.json();
 
         if (data.length === 0) {
-            recipesList.innerHTML = '<p>No recipes found.</p>';
+            //recipesList.innerHTML = '<p>No recipes found.</p>';
+            alert("No recipes found.");
             return;
         }
 
