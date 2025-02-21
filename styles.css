@@ -9,10 +9,23 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     padding: 20px;
+    background-image: url("images/roam-in-color-z3QZ6gjGRt4-unsplash.jpg");
+    background-size: cover;
+    background-position: center 23%;
+    background-repeat: no-repeat;
+}
+
+#ingredient {
+    padding: 20px;
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .screen {
     display: none;
+
 }
 
 #searchScreen {
@@ -40,6 +53,7 @@ button {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    margin-top: 60px;
 }
 
 button:hover {
@@ -68,3 +82,5 @@ button:hover {
 #recipeDetails h3 {
     margin-top: 20px;
 }
+
+
