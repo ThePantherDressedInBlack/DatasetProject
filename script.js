@@ -28,7 +28,6 @@ async function getRecipesFromAPI(ingredient) {
         const data = await response.json();
 
         if (data.length === 0) {
-            //recipesList.innerHTML = '<p>No recipes found.</p>';
             alert("No recipes found.");
             return;
         }
